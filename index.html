@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Employee Dummy Site</title>
+<link rel="stylesheet" href="dummyEmployeeStyles.css">
+</head>
+
+<body>
+    <!--Create form that takes in 4 inputs: First Name, Last Name, Department, and Salary. Include a submit buttton-->
+    <h1>Add New Employee</h1>
+    <form class="form1">
+        <label for="fname">Employee First Name:</label>
+        <input type="text" id="fname" placeholder="John" required="required"><br>
+        <label for="lname">Employee Last Name:</label>
+        <input type="text" id="lname" placeholder="Doe" required="required"><br>
+        <label for="department">Department Name:</label>
+        <input type="text" id="department" placeholder="eg.Software Development" required="required"><br>
+        <label for="salary">Salary:</label>
+        <input type="number" min="0" id="salary" placeholder="0" required="required"><br><br>
+        <input type="submit" value="Add New Employee" id="sub-btn">
+    </form>
+    <div>
+        <h3 class="staff-heading">Our Staff</h3>
+        <ul id="staff-members">
+        </ul> <br><br>
+        <button>Remove Employee</button>
+    </div>
+<script src="dummyEmployeeSite.js"></script>
+</body>
+</html>
